@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".FindYourAccount"
+	android:padding="10dp"
+	tools:showIn="@layout/activity_find_your_account">
+	<EditText android:id="@+id/email"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_width="match_parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:hint="Email"
+		android:paddingLeft="4dp"
+		android:layout_height="wrap_content" />
+	<TextView android:id="@+id/hint"
+		app:layout_constraintTop_toBottomOf="@id/email"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:gravity="center_horizontal"
+		android:text="Please Enter Your email to search for your account"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<Button
+		android:id="@+id/findAccount"
+		android:layout_margin="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/button"
+		android:text="Find Your Account"
+		android:textAllCaps="false"
+		android:textColor="#FFFF"
+		android:textStyle="bold"
+		app:layout_constraintTop_toBottomOf="@id/hint"
+		/>
+</androidx.constraintlayout.widget.ConstraintLayout>
